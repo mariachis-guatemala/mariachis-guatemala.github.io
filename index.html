@@ -8,6 +8,7 @@
     <link href="/dist/output.css" rel="stylesheet">
     <meta content="https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w180/nth.png" property="og:image">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Mariachis</title>
     <script type="application/ld+json">
         {
@@ -54,9 +55,54 @@
     <div class="flex justify-center">
         <img src="https://1.bp.blogspot.com/-4wmeM3oaCoM/XS0DvLQbxmI/AAAAAAAAA8k/iTxrRqvJO4kT1OFNLa7YQTG5c2cbKXJfQCPcBGAYYCw/s320/mariachis%2Ben%2Bguatemala%2Btikal.png" alt="mariachis" title="mariachis" class="w-9/12">
     </div>
+    <div class="flex flex-col justify-center items-center p-5">
+      <h2 class="text-center text-2xl font-bold">Como contratar un mariachi en Guatemala</h2>
+      <p><b>Contratar un mariachi en Guatemala</b> es muy facil solo debe marcar nuestro <b>numero de telefono</b> <span class="text-red-700">5903 2957</span> y sin compromiso le daremos nuestro <b>precio</b>, recuerde que nos adaptamos alo que usted quiere, nos puede <b>contratar</b> por ronda, tiempo o evento, siempre al mejor <b>precio</b>.</p>
+    </div>
     Imagen de <a href="https://www.freepik.es/foto-gratis/amigos-al-aire-libre-parque-tomando-cerveza-juntos_17809220.htm#query=family%20party&position=22&from_view=search&track=ais">Freepik</a>
     <div class="flex h-12 bg-green-900 p-5 text-white text-center items-center">
         <p class="text-center">Una pagina de <a href="https://samuelcastillogt.github.io">Samuel Castillo</a></p>
     </div>
+    <div class="modal-container hidden">
+    <div class="modal p-10 rounded flex flex-col justify-center items-center">
+      <h2 class="text-2xl font-bold text-center">Mariachis economicos en oferta</h2>
+      <p>Hoy tenemos una oferta espeical en su zona</p>
+      <p class="text-2xl font-bold">Tel: <span class="text-red-700">5707-3324</span></p>
+      <button class="bg-green-900 rounded text-white p-5 m-5">Cotizar sin compromiso</button>
+    </div>      
+    </div>
+
+    <style>
+
+      .modal-container{
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal{
+        background-color: white;
+      }
+            .hidden{
+        display: none;
+      }
+    </style>
+    <script>
+      const modal = document.querySelector(".modal-container")
+      document.addEventListener("DOMContentLoaded", ()=>{
+        setTimeout(()=>{
+          modal.classList.remove("hidden")
+        }, 3000)
+      })
+      modal.addEventListener("click", ()=>{
+        modal.classList.add("hidden")
+        window.open("tel:57073324")
+      })
+    </script>
 </body>
 </html>
